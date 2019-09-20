@@ -8,6 +8,7 @@ class GuestTest < MiniTest::Test
     @guest1 = Guest.new("Fred", 50.00)
     @guest2 = Guest.new("Angela", 50.00)
     @guest3 = Guest.new("Juan", 20.00)
+    @guest4 = Guest.new("Maria", 20.00)
   end
 
   def test_guest_has_name()

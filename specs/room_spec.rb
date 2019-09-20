@@ -3,14 +3,13 @@ require('minitest/rg')
 require_relative("../guest")
 require_relative("../room")
 
-
 class RoomTest < MiniTest::Test
 
   def setup()
 
-    @room1 = Room.new("Luxurious Room")
-    @room2 = Room.new("Alien Room")
-    @room3 = Room.new("Swinging Sixties Room")
+    @room1 = Room.new("Luxurious Room", 10)
+    @room2 = Room.new("Alien Room", 5)
+    @room3 = Room.new("Swinging Sixties Room", 15)
 
 
   end
@@ -20,10 +19,9 @@ class RoomTest < MiniTest::Test
   end
 
 
-  def test_songs()
-    assert_equal("Eight Days a Week", @room3.song())
+  def test_room_size()
+    assert_equal(10, @room1.capacity())
   end
-
 
 
 
