@@ -8,9 +8,9 @@ class RoomTest < MiniTest::Test
 
   def setup()
 
-    @room1 = Room.new("Luxurious Room", "Kanye West - Golddigger")
-    @room2 = Room.new("Alien Room", "Sheryl Crow - Maybe Angels")
-    @room3 = Room.new("Swinging Sixties Room", "The Beatles - Eight Days a Week")
+    @room1 = Room.new("Luxurious Room")
+    @room2 = Room.new("Alien Room")
+    @room3 = Room.new("Swinging Sixties Room")
 
 
   end
