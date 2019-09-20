@@ -21,4 +21,9 @@ attr_reader :name, :song, :capacity
     @guests_in_room =+ 1
   end
 
+  def guest_goes_out
+    @guests_in_room =- 1
+  end
+
+
 end

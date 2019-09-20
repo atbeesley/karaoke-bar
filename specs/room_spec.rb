@@ -27,5 +27,9 @@ class RoomTest < MiniTest::Test
     assert_equal(1, @room1.guests_comes_in)
   end
 
+  def test_guest_goes_out # This test runs but isn't realistic. Or is it?
+    assert_equal(-1, @room1.guest_goes_out)
+  end
+
 
 end
