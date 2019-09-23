@@ -1,6 +1,8 @@
 class Room
 
-attr_reader :name, :song, :capacity
+  require_relative("../guest")
+
+attr_reader :name, :song, :capacity, :guest
 
   def initialize(name, capacity)
   @name = name

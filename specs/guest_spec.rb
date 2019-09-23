@@ -19,4 +19,5 @@ class GuestTest < MiniTest::Test
     assert_equal(50.00, @guest2.wallet)
   end
 
+
 end
